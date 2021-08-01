@@ -77,6 +77,7 @@ a,a:visited,a:hover{
     padding:1.0625rem 1.5rem;
 }
 
+
 .header .logo img{
     width:8.813rem;
     height:1.25rem;
@@ -147,15 +148,14 @@ a,a:visited,a:hover{
 
 @keyframes fade-in {
     from{
-        display:none;
+        visibility: hidden;
         opacity:0;
     }
     1%{
-        display:block;
+        visibility: hidden;
         opacity:0;
     }
     to{
-        display:block;
         opacity:1;
     }
 }
@@ -171,7 +171,33 @@ a,a:visited,a:hover{
     background-image:linear-gradient(var(--darkblue),transparent);
 }
 
+
+.menu_content{
+    background-color: var(--white);
+    padding:1.625rem;
+    /* margin:0 1.5rem; */
+    border-radius: 5px;
+    position:absolute;
+    width:calc(100% - 7rem);
+    left:50%;
+    margin-top:1.563rem;
+    transform: translateX(-50%);
+}
+
+.menu_content a{
+    color:var(--darkblue);
+    padding:0.625rem;
+    display: block;
+    text-align: center;
+}
+
+
+
+
 /* Helper/Utility Classes */
+.container{
+    padding:0rem 1.5rem;
+}
 .flex{
     display:flex;
 }
@@ -183,6 +209,12 @@ a,a:visited,a:hover{
 }
 .flex-ai-c{
     align-items: center;
+}
+.hidden{
+    visibility: hidden;
+}
+.scroll-lock{
+    overflow: hidden;
 }
 
 /* buttons */
@@ -210,7 +242,7 @@ button:hover{
 /* this one is for desktop */
 @media(min-width:64em){
     .header nav{
-        padding:19px 165px;
+        padding:1.188rem 10.313rem;
     }
     .header .menu{
         display:none;
