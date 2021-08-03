@@ -191,8 +191,45 @@ a,a:visited,a:hover{
     text-align: center;
 }
 
+/* hero section  */
+.hero_img{
+    position:relative;
+    background:url('/images/bg-intro-mobile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    min-height:16.25rem;
+}
+.hero_img::before{
+    content:'';
+    position:absolute;
+    height:100%;
+    width: 100%;
+    background:url('/images/image-mockups.png');
+    /* background-size:88%; */
+    background-size:300px;
+    background-repeat: no-repeat;
+    background-position:center bottom;
+}
 
+.hero_text h1{
+    color:var(--darkblue);
+    font-weight: 400;
+    margin-bottom: 1.875rem;
+    
+    /* padding:26px 40px; */
+    font-size:30px;
+}
+.hero_text{
+    text-align: center;
+    margin:1.875rem 0 4.938rem 0;
+}
 
+.hero_p{
+    font-size:16px;
+    line-height: 1.5;
+    margin-bottom:1.875rem;
+}
 
 /* Helper/Utility Classes */
 .container{
@@ -247,6 +284,20 @@ button:hover{
     .header .menu{
         display:none;
     }
+    .hero{
+        display:flex;
+    }
+    /* .hero_img{
+        background:url('/images/bg-intro-desktop.svg');
+        height:657px;
+        width:750px;
+    }
+    .hero_img::before{
+        background-size: 90%;
+        background-position:center bottom;
+        bottom:-100px;
+    } */
+
 }
 
 /* this one is for mobile  */
