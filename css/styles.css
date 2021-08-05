@@ -239,9 +239,50 @@ a,a:visited,a:hover{
     margin-bottom:1.875rem;
 }
 
+
+/* features section  */
+.feature .container{
+    padding:1.875rem 1.5rem 1rem 1.5rem;
+}
+.feature{
+    background-color:var(--lightgrayishblue);
+}
+.feature_text{
+    text-align: center;
+}
+.feature_text h2{
+    color:var(--darkblue);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1.875rem;
+}
+
+.feature_p{
+    font-size:16px;
+    line-height: 1.5;
+    margin-bottom:1.875rem;
+}
+.feature_grid{
+    text-align: center;
+}
+.grid > *{
+    padding:0 0 1rem 0;
+}
+.grid > h4{
+    color:var(--darkblue);
+    font-weight: 300;
+}
+.grid > p{
+    font-size:16px;
+}
+
+
 /* Helper/Utility Classes */
 .container{
     padding:0rem 1.5rem;
+}
+.features_grid_container{
+    padding: 0 1.563rem;
 }
 .flex{
     display:flex;
@@ -262,6 +303,9 @@ a,a:visited,a:hover{
     overflow: hidden;
 }
 
+
+
+
 /* buttons */
 button{
     padding:1rem 2.125rem;
@@ -278,6 +322,9 @@ button:hover{
     cursor: pointer;
     opacity:0.75;
 }
+
+
+
 
 /* visibility classes */
 
@@ -309,9 +356,21 @@ button:hover{
             background-repeat: no-repeat;
             top:-200px; */
     }
+    .hero_img::after{
+        content:'';
+        position:absolute;
+        height:120%;
+        width: 100%;
+        background:url('/images/image-mockups.png');
+        /* background-size:88%; */
+        background-repeat: no-repeat;
+        background-position:center bottom;
+        background-size:720px 900px;
+        left:100px;
+        /* top:-30px; */
+    }
     .hero_img::before{
-        background-size:615px 780px;
-        left:90px;
+        display:none;
     }
     .hero_text{
         flex:1;
@@ -335,16 +394,32 @@ button:hover{
         line-height: 1.5;
         max-width:450px;
     }
-    /* .hero_img{
-        background:url('/images/bg-intro-desktop.svg');
-        height:657px;
-        width:750px;
+    .feature_p{
+        text-align: left;
+        max-width: 613px;
     }
-    .hero_img::before{
-        background-size: 90%;
-        background-position:center bottom;
-        bottom:-100px;
-    } */
+    .feature .container{
+        padding:6.875rem 0 2.938rem  0;
+    }
+    .feature h2{
+        text-align:left;
+    }
+    .features_grid .container{
+        padding:0 10.563rem;
+    }
+    .feature_grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-align: left;
+        gap:3rem;
+    }
+    .features_grid_container{
+        padding: 0 10.438rem 6.5rem 10.438rem;
+    }
+    .grid >:first-child{
+        padding:0 0 2.75rem 0;
+    }
+
 }
 
 
