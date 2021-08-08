@@ -202,7 +202,7 @@ a,a:visited,a:hover{
 }
 .hero_img{
     position:relative;
-    background:url('/images/bg-intro-mobile.svg');
+    background:url('../images/bg-intro-mobile.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center center;
@@ -213,7 +213,7 @@ a,a:visited,a:hover{
     position:absolute;
     height:100%;
     width: 100%;
-    background:url('/images/image-mockups.png');
+    background:url('../images/image-mockups.png');
     /* background-size:88%; */
     background-size:300px;
     background-repeat: no-repeat;
@@ -454,7 +454,7 @@ button:hover{
         flex:2;
         order:2;
         min-height: 40.938rem;
-        background:url("/images/bg-intro-desktop.svg");
+        background:url("../images/bg-intro-desktop.svg");
         background-position:left bottom;
         background-size:1080px;
         background-repeat: no-repeat;
@@ -468,7 +468,7 @@ button:hover{
         position:absolute;
         height:120%;
         width: 100%;
-        background:url('/images/image-mockups.png');
+        background:url('../images/image-mockups.png');
         /* background-size:88%; */
         background-repeat: no-repeat;
         background-position:center bottom;
