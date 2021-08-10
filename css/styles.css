@@ -422,6 +422,7 @@ button{
     font-weight: 400;
     font-size: var(--font-sm);
     transition: opacity 300ms ease-in-out;
+    white-space: nowrap;
 }
 button:hover{
     cursor: pointer;
